@@ -130,10 +130,6 @@ public abstract class Engine {
         return Toolkit.getDefaultToolkit().getScreenSize();
     }
 
-    // runnable: função anonima sem parametro sem retorno
-    // consumer: função anonima com parametro sem retorno
-    // predicate: função anonima com parametro e retorno
-
     void repeat(int times, int interval, Predicate<Integer> action) {
         for (int i = 0; i < times; i++) {
             if (action.test(i)) {
